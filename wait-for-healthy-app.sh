@@ -24,6 +24,7 @@ while true; do
 
   if [ "$STATUS" == "pass" ]; then
     echo "Health check passed!"
+    sleep 10 # make sure gitea is ready
     break
   fi
 

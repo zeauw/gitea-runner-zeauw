@@ -1,6 +1,6 @@
 FROM gitea/act_runner:latest
 
-RUN apk add --no-cache nodejs hugo npm jq
+RUN apk add --no-cache nodejs hugo npm jq curl
 
 COPY ./wait-for-healthy-app.sh /wait-for-healthy-app.sh
 

@@ -6,4 +6,4 @@ COPY ./wait-for-healthy-app.sh /wait-for-healthy-app.sh
 
 ENTRYPOINT ["/sbin/tini", "--"]
 
-CMD bash /wait-for-healthy-app.sh ${GITEA_INSTANCE_URL}/api/healthz run.sh
+CMD bash /wait-for-healthy-app.sh ${GITEA_INSTANCE_URL}/api/healthz /usr/local/bin/run.sh

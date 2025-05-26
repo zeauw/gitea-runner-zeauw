@@ -1,6 +1,6 @@
 FROM gitea/act_runner:latest
 
-RUN apk add --no-cache nodejs npm jq curl
+RUN apk add --no-cache nodejs npm jq curl fontconfig font-noto icu-data-full
 
 COPY ./wait-for-healthy-app.sh /wait-for-healthy-app.sh
 
